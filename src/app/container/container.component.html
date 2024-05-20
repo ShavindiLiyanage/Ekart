@@ -1,0 +1,38 @@
+<!-- <p>Name: {{ name }}</p>
+<p>Price: ${{ price }}</p>
+<p>Color: {{ color }}</p>
+<p>Discounted Price: $798</p> -->
+<div class="ekart-product--container">
+  <!-- <img [src]="product.pimage" alt="Product Image" [ngStyle]="{'width.px': 250, 'height.px': 300}">
+
+
+  STRING INTRPOLATION
+  <p>Name: {{ product.name }}</p>
+  <p>Price: {{ '$' + product.price }}</p>
+  <p>Color: {{ product.color }}</p>
+  <p>Discounted Price: {{ getDiscountedPrice().toFixed(2) }}</p>
+  <p>{{product.inStock > 0 ? 'only ' + product.inStock + ' items left': 'Not in Stock'}}</p>
+  <button (click)="decrementCartValue()">-</button>
+  <span>{{ addToCart }}</span>
+  <button (click)="incrementCartValue()">+</button>
+  <button [disabled]="!(product.inStock > 0)">Buy Now</button> -->
+  <!-- <input bind-value="name"> -->
+  <!-- <input [value]="name" [attr.aria-hidden]="">" -->
+  <!-- <input (input)="onNameChange($event)"><br>
+  <p>name={{name}}</p> -->
+
+
+  <app-search></app-search>
+  <!-- <div *ngFor="let item in items">
+    <p>Current element of array is: {{ items }}</p>
+  </div> -->
+
+  <!-- <div *ngFor="let item of [2,3,4,5,6,8]"> -->
+  <!-- <div *ngFor="let item of listOfString">
+    <p>Current element of array is: {{ item }}</p>
+  </div> -->
+  <product-list></product-list>
+
+
+</div>
+
