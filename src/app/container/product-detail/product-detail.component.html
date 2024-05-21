@@ -28,7 +28,7 @@
           </p>
       </div>
 
-      <div class="ekart-product-detail-size" *ngIf="product.is_in_inventory">
+      <div class="ekart-product-detail-size" >
     <div style="padding: 5px 0px; border-bottom: #ccc 2px solid">
         <h4>Available Size</h4>
     </div>
@@ -60,7 +60,10 @@
   </div>
 
   <div class="ekart-product-detail-addtoCart">
-      <button class="btn-add-to-cart">ADD TO CART</button>
+      <button class="btn-add-to-cart" *ngIf="product.is_in_inventory; else notifyMe">ADD TO CART</button>
+      <ng-template #notifyMe>
+        <button class="btn-add-to-cart">NOTIFY ME</button>
+      </ng-template>
   </div>
 </div>
 
